@@ -1,0 +1,194 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f7fb;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: #222;
+}
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #2563eb;
+    color: #fff;
+    padding: 0 24px;
+    height: 56px;
+    box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+}
+.home-btn {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+}
+.home-btn:hover {
+    background: rgba(255,255,255,0.12);
+}
+.spacer {
+    flex: 1;
+}
+.lang-select {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.lang-select label {
+    color: #fff;
+    font-size: 1rem;
+}
+.lang-select select {
+    border-radius: 5px;
+    border: none;
+    padding: 6px 12px;
+    font-size: 1rem;
+    background: #fff;
+    color: #2563eb;
+    font-weight: bold;
+}
+#app {
+    max-width: 420px;
+    margin: 48px auto 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(37,99,235,0.10);
+    padding: 40px 28px 32px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    color: #2563eb;
+    margin-bottom: 32px;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-align: center;
+}
+.select-group {
+    width: 100%;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+label {
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+select {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1.5px solid #2563eb;
+    font-size: 1rem;
+    background: #f4f7fb;
+    color: #2563eb;
+    font-weight: 600;
+    outline: none;
+    transition: border 0.2s;
+}
+select:focus {
+    border: 2px solid #2563eb;
+}
+button#recommend-btn {
+    width: 100%;
+    padding: 14px 0;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin-top: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+button#recommend-btn:hover {
+    background: #1741a6;
+    box-shadow: 0 4px 16px rgba(37,99,235,0.15);
+}
+#result {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #2563eb;
+    font-weight: 600;
+    min-height: 36px;
+    letter-spacing: 2px;
+}
+.footer {
+    margin-top: 48px;
+    text-align: center;
+    color: #2563eb;
+    font-size: 1rem;
+    padding: 24px 0 12px 0;
+    background: none;
+}
+@media (max-width: 600px) {
+    .topbar {
+        padding: 0 4vw;
+        height: 48px;
+    }
+    .home-btn {
+        font-size: 1rem;
+        padding: 6px 8px;
+    }
+    .lang-select label {
+        font-size: 0.95rem;
+    }
+    .lang-select select {
+        font-size: 0.95rem;
+        padding: 4px 8px;
+    }
+    #app {
+        max-width: 98vw;
+        padding: 18px 2vw 18px 2vw;
+        margin: 24px auto 0 auto;
+        border-radius: 10px;
+    }
+    h1 {
+        font-size: 1.15rem;
+        margin-bottom: 18px;
+    }
+    .select-group {
+        gap: 4px;
+        margin-bottom: 14px;
+    }
+    label {
+        font-size: 0.98rem;
+    }
+    select {
+        font-size: 0.98rem;
+        padding: 7px 8px;
+    }
+    button#recommend-btn {
+        font-size: 1rem;
+        padding: 10px 0;
+        margin-top: 6px;
+    }
+    #result {
+        font-size: 1.05rem;
+        margin-top: 18px;
+        min-height: 24px;
+    }
+    .footer {
+        font-size: 0.92rem;
+        margin-top: 24px;
+        padding: 12px 0 8px 0;
+    }
+}
+@media (max-width: 400px) {
+    #app {
+        padding: 8px 1vw 8px 1vw;
+    }
+    .topbar {
+        padding: 0 2vw;
+    }
+} 

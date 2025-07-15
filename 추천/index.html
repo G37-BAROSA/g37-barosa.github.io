@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto Number Recommendation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="topbar">
+        <a href="/" class="home-btn">🏠 Lotto Home</a>
+        <div class="spacer"></div>
+        <div class="lang-select">
+            <label for="language-select" id="language-label">Language:</label>
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="ko">한국어</option>
+            </select>
+        </div>
+    </nav>
+    <div id="app">
+        <h1 id="title">Lotto Number Recommendation</h1>
+        <div class="select-group">
+            <label for="country-select" id="country-label">Country:</label>
+            <select id="country-select">
+                <option value="us">USA</option>
+                <option value="kr">Korea</option>
+                <option value="uk">UK</option>
+                <option value="jp">Japan</option>
+                <option value="fr">France</option>
+                <option value="de">Germany</option>
+                <option value="it">Italy</option>
+                <option value="es">Spain</option>
+                <option value="au">Australia</option>
+                <option value="ca">Canada</option>
+                <option value="br">Brazil</option>
+                <option value="ru">Russia</option>
+                <option value="cn">China</option>
+                <option value="in">India</option>
+                <option value="za">South Africa</option>
+            </select>
+        </div>
+        <button id="recommend-btn">Recommend Numbers</button>
+        <div id="result"></div>
+    </div>
+    <footer class="footer">
+        <span>&copy; 2024 Lotto Recommendation</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
